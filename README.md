@@ -35,7 +35,9 @@ The pipeline is orchestrated in Databricks Workflows with automatic backups to A
 - Silver_Customers / Silver_Products / Silver_Sales – Apply data cleansing, deduplication, and formatting.
 - Gold_Customers / Gold_Products / Gold_Sales – Build final Star Schema tables.
 - Gold_Products uses Delta Live Tables for declarative transformation.
-- Publish to Synapse – Register Gold tables as External Tables for Azure Synapse.
+- Publish to Synapse – Register Gold tables as External Tables for PowerBi.
+<img width="2559" height="1267" alt="image" src="https://github.com/user-attachments/assets/df079ad3-0540-4a7e-8c2d-9365db090c7f" />
+
 
 ## Technologies Used
 
