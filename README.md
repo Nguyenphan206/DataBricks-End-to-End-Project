@@ -3,9 +3,9 @@
 ## Project Overview
 
 This project demonstrates an End-to-End Data Engineering Pipeline built on Azure Databricks using the Medallion Architecture (Bronze → Silver → Gold).
-
 The pipeline ingests raw data from Azure Data Lake Gen2, processes it through multiple transformation layers in Databricks, and models the curated data into a Star Schema (Dimensional Model) in the Gold layer.
 The final curated data is exposed as External Tables for integration into Azure Synapse Analytics, making it ready for downstream analytics and reporting (e.g., Power BI).
+
 ⚠️ Note: Power BI reports are not implemented in this project — it is only shown in the architecture diagram for completeness.
 
 ## Architecture Overview
