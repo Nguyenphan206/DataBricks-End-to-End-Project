@@ -1,4 +1,4 @@
-# DataBricks-End-to-End-Project
+# DataBricks End-to-End Pipeline Project
 
 ## Project Overview
 
