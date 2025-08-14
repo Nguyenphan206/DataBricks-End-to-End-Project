@@ -10,6 +10,7 @@ The final curated data is exposed as External Tables for integration into Azure 
 
 ## Architecture Overview
 <img width="1227" height="683" alt="image" src="https://github.com/user-attachments/assets/fd4a3cd2-4146-4cac-b73b-69cc3f2518a1" />
+
 **Flow Explanation:**
 - Azure Data Lake Gen2 – Stores raw source files.
 - Bronze Layer – Ingest raw data as-is into Delta tables using Databricks Autoloader.
@@ -24,7 +25,9 @@ The final curated data is exposed as External Tables for integration into Azure 
 
 The pipeline is orchestrated in Databricks Workflows with automatic backups to Azure Data Lake Gen2 at every stage.
 **Pipeline Diagram:**
+
 <img width="2239" height="766" alt="image" src="https://github.com/user-attachments/assets/6de8dc57-b9a2-4150-964b-c9b705e8967d" />
+
 **Execution Order:**
 - Parameters – Load global configs (storage paths, table names).
 - Bronze_Autoloader_iteration – Incrementally ingest raw data from ADLS Gen2 → Bronze Delta tables.
