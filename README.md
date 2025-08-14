@@ -38,10 +38,15 @@ The pipeline is orchestrated in Databricks Workflows with automatic backups to A
 ## Technologies Used
 
 - Azure Data Lake Gen2 – Raw & curated data storage
+<img width="2542" height="711" alt="image" src="https://github.com/user-attachments/assets/6a4d486b-5579-4055-b263-01834f8b186f" />
 - Azure Databricks – ETL processing, orchestration, Medallion Architecture
 - PySpark – Data transformation & processing
 - Delta Lake – ACID-compliant data storage
+<img width="1894" height="566" alt="image" src="https://github.com/user-attachments/assets/268aa1a6-9ec7-45fb-add7-df8af874f442" />
 - Delta Live Tables – Declarative data pipeline in Gold layer
+<img width="2536" height="1263" alt="image" src="https://github.com/user-attachments/assets/78f81d53-f1d4-4d30-b3ef-2cf3e156784c" />
+- Databricks Catalog
+<img width="1760" height="888" alt="image" src="https://github.com/user-attachments/assets/a9a9c27f-2304-4dc8-ae52-904b75e51af8" />
 - Azure Key Vault – Secure credential management
 - Azure Synapse Analytics – Data warehouse integration
 - GitHub – Version control
