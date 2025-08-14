@@ -6,7 +6,6 @@ This project demonstrates an End-to-End Data Engineering Pipeline built on Azure
 
 The pipeline ingests raw data from Azure Data Lake Gen2, processes it through multiple transformation layers in Databricks, and models the curated data into a Star Schema (Dimensional Model) in the Gold layer.
 The final curated data is exposed as External Tables for integration into Azure Synapse Analytics, making it ready for downstream analytics and reporting (e.g., Power BI).
-
 ⚠️ Note: Power BI reports are not implemented in this project — it is only shown in the architecture diagram for completeness.
 
 ## Architecture Overview
@@ -45,7 +44,7 @@ The pipeline is orchestrated in Databricks Workflows with automatic backups to A
 <img width="1894" height="566" alt="image" src="https://github.com/user-attachments/assets/268aa1a6-9ec7-45fb-add7-df8af874f442" />
 - Delta Live Tables – Declarative data pipeline in Gold layer
 <img width="2536" height="1263" alt="image" src="https://github.com/user-attachments/assets/78f81d53-f1d4-4d30-b3ef-2cf3e156784c" />
-- Databricks Catalog
+- Databricks Catalog – Registers all Delta tables in Unity Catalog for discoverability.
 <img width="1760" height="888" alt="image" src="https://github.com/user-attachments/assets/a9a9c27f-2304-4dc8-ae52-904b75e51af8" />
 - Azure Key Vault – Secure credential management
 - Azure Synapse Analytics – Data warehouse integration
