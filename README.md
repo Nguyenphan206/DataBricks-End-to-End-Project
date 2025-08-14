@@ -19,7 +19,7 @@ The final curated data is exposed as External Tables for integration into Azure 
 
 
 - Gold_Products built using Delta Live Tables.
-- Azure Synapse Analytics – Consumes Gold layer data via External Tables.
+- (Optional) Azure Synapse Analytics – Consumes Gold layer data via External Tables.
 - (Optional) Power BI – Connects to Synapse for reporting and dashboards.
 ## Pipeline Flow in Databricks
 
